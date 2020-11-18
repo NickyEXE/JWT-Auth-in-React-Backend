@@ -6,7 +6,7 @@ class MessagesController < ApplicationController
   end
 
   def create
-    @message = Message.create(message_params)
+    @message = session_user.messages.create(message_params)
     render json: @message
   end
 
