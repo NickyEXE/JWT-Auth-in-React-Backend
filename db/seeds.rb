@@ -7,8 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-freddy = User.create(username: "1NiteAtFreddys")
-mike = User.create(username: "NotThatMikeMyers")
+freddy = User.create(username: "1NiteAtFreddys", password: "123")
+mike = User.create(username: "NotThatMikeMyers", password: "123")
 
 random = Channel.create(name: "random")
 murder = Channel.create(name: "my-favorite-murder")
